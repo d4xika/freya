@@ -18,10 +18,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.secondary),
-          onPressed: () => Navigator.pop(context),
-        ),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

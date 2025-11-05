@@ -80,16 +80,16 @@ class _MedicationCardState extends State<MedicationCard> {
       med['reminder']!.text = selectedTime.format(context);
     }
   },
-  decoration: InputDecoration(
+  decoration: const InputDecoration(
     labelText: 'Reminder Time',
     border: OutlineInputBorder(),
-    suffixIcon: const Icon(Icons.access_time),
+    suffixIcon: Icon(Icons.access_time),
   ),
 ),
               ],
             ),
           );
-        }).toList(),
+        }),
       ],
     );
   }

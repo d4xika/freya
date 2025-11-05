@@ -3,6 +3,7 @@ import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
 import 'widgets/big_button.dart';
 import 'constants/app_bar.dart';
+import 'screens/fhir_patient_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +43,18 @@ class StartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 70),
 
-            // Login Button
+            BigButton(
+              text: 'FHIR Demo',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FhirPatientScreen()),
+                );
+              },
+            ),
+
+            const SizedBox(height: 24),
+
             BigButton(
               text: 'Login',
               onPressed: () {
@@ -55,7 +67,6 @@ class StartScreen extends StatelessWidget {
 
             const SizedBox(height: 24),
 
-            // Register Button
             BigButton(
             text: 'Register',
             onPressed: () {

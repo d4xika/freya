@@ -101,9 +101,9 @@ class _AccountInfoScreenState extends State<AccountInfoScreen> {
     ],
   );
 
-  Widget _buildMedicationSection() => Column(
+  Widget _buildMedicationSection() => const Column(
     crossAxisAlignment: CrossAxisAlignment.start,
-    children: const [
+    children: [
       SectionTitle(title: "Medication"),
       MedicationCard(),
     ],

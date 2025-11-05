@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '/constants/colors.dart';
-import '/constants/styles.dart';
 
 class InputField extends StatelessWidget {
   final String label;
