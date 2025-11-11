@@ -41,7 +41,6 @@ class StartScreen extends StatelessWidget {
               'Hey Gurl!',
               style: TextStyle(fontSize: 24),
             ),
-            const SizedBox(height: 70),
 
             BigButton(
               text: 'FHIR Demo',
@@ -75,8 +74,8 @@ class StartScreen extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const RegisterScreen()),
               );
              },
-          ),
-          ],
+           ),
+          ],       
         ),
       ),
     );
