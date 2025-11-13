@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '/constants/colors.dart';
 import '/widgets/big_button.dart';
 import '/widgets/input_field.dart';
+import 'home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -60,6 +61,10 @@ class _LoginScreenState extends State<LoginScreen> {
             BigButton(
               text: 'Login',
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
               },
             ),
           ],

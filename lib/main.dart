@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'FREYA',
       theme: ThemeData(
         primaryColor: const Color(0xFFD2B7E5),
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 251, 239, 248),
       ),
       home: const StartScreen(),
     );

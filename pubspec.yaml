@@ -13,6 +13,9 @@ dependencies:
   fhir_r5: ^0.4.0
   intl: ^0.20.2
   table_calendar: ^3.2.0
+  flutter_secure_storage: ^9.0.0
+  fitbitter: ^2.0.6
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:

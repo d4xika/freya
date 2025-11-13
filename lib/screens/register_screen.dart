@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '/constants/colors.dart';
 import '/widgets/big_button.dart';
 import '/widgets/input_field.dart'; 
+import 'home_screen.dart';
+
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -94,6 +96,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
               BigButton(
                 text: 'Register',
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );  
                 },
               ),
 
