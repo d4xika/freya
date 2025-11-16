@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class TrackingCalendarLarge extends StatefulWidget {
-  const TrackingCalendarLarge({super.key});
+  const TrackingCalendarLarge({super.key, required Null Function(dynamic day) onDaySelected});
 
   @override
   State<TrackingCalendarLarge> createState() => _TrackingCalendarLargeState();

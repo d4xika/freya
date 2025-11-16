@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import '/screens/symptom_input_screen.dart';
+import '../screens/symptom_input_screen.dart';
 
 class AddSymptomFAB extends StatelessWidget {
-  const AddSymptomFAB({super.key});
+  final DateTime selectedDay;
+
+  const AddSymptomFAB({
+    super.key,
+    required this.selectedDay,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +15,7 @@ class AddSymptomFAB extends StatelessWidget {
       onPressed: () {
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (ctx) => const SymptomInputScreen(),
+            builder: (ctx) => SymptomInputScreen(selectedDay: selectedDay),
           ),
         );
       },
